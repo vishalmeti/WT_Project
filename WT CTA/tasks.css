@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: 0.5s ease;
+}
+
+.head{
+    padding: 50px 10px;
+    line-gap-override: 10px;
+    background: linear-gradient(rgb(0, 217, 255),rgb(0, 137, 179));
+    margin: 0 0 60px 0;
+    position: sticky;
+    top: 0;
+    color: rgb(255, 255, 255);
+    
+}
+
+
+.addTask{
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+}
+
+
+form input{
+    position: relative;
+    padding: 5px 10px;
+    margin: 10px 20px;
+    font-size: 15px;
+    width: 400px;
+    height: 25px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+input:focus{
+    outline: none;
+}
+
+form button{
+    padding: 10px 20px;
+    background-color: rgb(0, 110, 255);
+    border: none;
+    transition: 0.2s ease;
+    color: white;
+    font-weight: bold;
+}
+
+form button:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 0 10px rgba(0, 255, 170, 0.527);
+}
+
+/* .taskLists{
+    width: 100%;
+    display: flex;
+    height: 400;
+    justify-content: center;
+    margin: 40px 0;
+   
+}
+
+.taskLists ul{
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.taskLists ul li{
+    list-style: none;   
+}
+
+.taskLists ul li .tasks{
+    display: flex;
+    width: 600px;
+    border-bottom: 1px solid black;
+    padding: 10px 20px;
+    margin: 20px 0;
+}
+
+.btns button{
+    padding: 5px 10px;
+    color: white;
+} */
+
+a{
+    text-decoration: none;
+    margin: 0px 20px;
+    padding: 10px 20px;
+    background-color: brown;
+    color: white;
+    border-radius: 10px;
+}
+
+
+.taskLists{
+    height: 450px;
+    overflow-y: scroll;
+}
+
+table{
+    width: 40%;
+    /* justify-content: center; */
+    /* margin: 30px auto; */
+    border-collapse: separate;
+    border-spacing: 15px;
+}
+
+table caption{
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: darkred;
+}
+
+ table td{
+    padding: 10px 10px;
+    border-bottom: 1px solid black;
+    
+}
+
+table td p{
+    padding-left: 20px;
+}
+
+table td.btns{
+    display: flex;
+}
+table tr{
+    margin-bottom: 10px;
+    transition: 0.3s ease;
+    border-radius: 10px;
+}
+
+table tr:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 0 20px black;
+}
+
+table input[type='submit'], table input[type='button']{
+    padding: 10px 20px;   
+    color: white;
+    border-radius: 5px;
+    border: none;
+    transition: 0.2s ease;
+} 
+
+input[type='submit'].done{
+    background: green;
+}
+
+input[type='submit'].done:hover{
+    background: rgb(3, 184, 3);
+}
+
+input[type='button'].update{
+    background: rgb(0, 111, 131);
+}
+
+input[type='button'].update:hover{
+    background: rgb(1, 150, 177);
+}
+
+input[type='submit'].delete{
+    background: red;
+}
+
+input[type='submit'].delete:hover{
+    background: rgb(255, 136, 0);
+}
+
+form label{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.due{
+    font-size: smaller;
+    color: grey;
+}
+
+.disabled{
+    background-color: grey;
+}
+
+.cancel{
+    background-color: red;
+}
+
+@media only screen and (max-width: 800px){
+    table{
+        font-size: 20px;
+        width: 200px;
+    }
+    
+    table caption{
+        color: white;
+        font-size: 20px;
+    }
+}
+
